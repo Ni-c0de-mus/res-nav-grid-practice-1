@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC|Arbutus+Slab|Bree+Serif|Cinzel|Cormorant+Garamond|Crete+Round|DM+Serif+Text|Domine|Nanum+Myeongjo|Neuton|Playfair+Display+SC|Solway|Ultra|Vidaloka|Zilla+Slab&display=swap');
+
+
+*,
+*::before,
+*::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: inherit;
+}
+
+:root {
+
+
+ /* Coolors */
+
+ --flirt: #A80874;
+ --italian-sky: #B7FDFE;
+ --malachite: #5EF38C;
+ --slime: #2B9720;
+ --pullman-green: #343A1A;
+ --magenta: #FF01FB;
+ --viv-cerulian: #02A9EA;
+ --lemon-glacier: #FAFF00;
+
+ --mid-blue: #75DDDD;
+ --dark-sky: #84C7D0;
+ --ceil: #9297C4;
+ --majesty: #9368B7;
+ --fandango: #AA3E98;
+ --azureish: #D9F0FF;
+ --winter-wizard: #A3D5FF;
+ --bone: #E1DABD;
+ --laurel-green: #ABC798;
+ --classic-rose: #FFC4EB;
+ --desert: #E6BEAE;
+ --pale-taupe: #B2967D;
+ --wenge: #6B6054;
+ --artichoke: #929487;
+ --silver-chalice: #A1B0AB;
+ --waterspout: #A8F9FF;
+ --photo-blue: #9AE5E6;
+
+ --metalic-sun: #A8763E;
+ --keyan-copper: #6F1A07;
+ --raisin-black: #2B2118;
+ --charcoal: #2F4550;
+ --reg-black: #000000;
+ --mummies-tomb: #739E82;
+ --taupe: #45462A;
+ --jet: #343330;
+ --paynes-grey: #546A7B;
+ --pale-copper: #DB7F67;
+ --dark-vanilla: #DBBEA1;
+ --khaki: #C3A995;
+ --grullo: #AB947E;
+ --vvd-brown: #66462C;
+ --dark-sienna: #31081F;
+ --rich-black: #0E0004;
+ --pale-yellow: #F3FFB6;
+ --black-shadows: #C0B7B1;
+ --wood-brown: #C69C72;
+ --pale-aqua: #BFD7EA;
+ --pewter-blue: #91AEC1;
+ --dust-storm: #E2C2C6;
+ --tuscanny: #B9929F;
+ --white: #ffffff;
+ --dark-gunmetal: #0D1F2D;
+ --gunmetal: #2D3142;
+ --silver: #BFC0C0;
+ --yank-blue: #1C3144;
+ --boston-red: #D00000;
+ --steel-teal: #508991;
+ --iceberg: #74B3CE;
+ --pale-gold: #E5BE9E;
+ --tumbleweed: #E1B07E;
+ --warm-black: #0E3B43;
+ --myrtle-green: #357266;
+ --begonia: #F7717D;
+ --melon: #F7B2B7;
+ --pineapple: #5C415D;
+ --max-purple: #B2ABF2;
+ --pink-ras: #89043D;
+ --white-smoke: #F7F7F2;
+ --pearl: #E4E6C3;
+
+ /* fonts */
+
+ --bree-serif: 'Bree Serif', serif;
+ --solway-serif: 'Solway', serif;
+ --crete-round: 'Crete Round', serif;
+ --domine-serif: 'Domine', serif;
+ --cinzel-serif: 'Cinzel', serif;
+ --cormorant-garamond: 'Cormorant Garamond', serif;
+ --zilla-slab: 'Zilla Slab', serif;
+ --nanum-serif: 'Nanum Myeongjo', serif;
+ --vidaloka: 'Vidaloka', serif;
+ --neuton: 'Neuton', serif;
+ --playfair: 'Playfair Display SC', serif;
+ --ultra-serif: 'Ultra', serif;
+ --arbutus-slab: 'Arbutus Slab', serif;
+ --dm-serif: 'DM Serif Text', serif;
+ --alegreya: 'Alegreya SC', serif;
+}
+
+html {
+ font-size: 10px;
+ box-sizing: border-box;
+}
+
+a {
+ text-decoration: none;
+}
+
+ul {
+ list-style: none;
+}
+
+img {
+ width: 100%;
+ max-width: 100%;
+ height: auto;
+}
+
+p {
+ font-size: 1.6rem;
+}
+
+.btn {
+ border-radius: 2rem;
+ font-size: 1.2rem;
+ text-transform: uppercase;
+ font-weight: 600;
+ text-align: center;
+ padding: .8rem 1.6rem;
+ margin-top: 2rem;
+ background-color: var(--ceil);
+ color: var(--gunmetal);
+ display: inline-block;
+ letter-spacing: .2rem;
+ transition: 420ms ease;
+}
+
+.btn:hover {
+ background-color: var(--iceberg);
+}
+
+section {
+ padding: 5rem 0;
+}
+
+body {
+ background: var(--jet);
+ font-family: var(--cormorant-garamond);
+}
+
+/* Heading */
+
+heading {
+ width: 100%;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: 1;
+}
+
+.container {
+ width: 100%;
+ max-width: 98rem;
+ padding: 0 1.5rem;
+ margin: 0 auto;
+}
+
+.menu__icons {
+ font-size: 3.5rem;
+ color: var(--ceil);
+ cursor: pointer;
+ transition: 420ms ease;
+}
+
+.menu__icons:hover {
+ color: var(--iceberg);
+}
+
+.nav__brand {
+ width: 3.5rem;
+}
+
+nav {
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0 1rem;
+}
+
+.nav__list {
+ width: 25rem;
+ height: 100vh;
+ background: var(--laurel-green);
+ position: fixed;
+ top: 0;
+ right: -26rem;
+ opacity: 0;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ transition: all 650ms ease-in-out, opacity 420ms ease;
+ z-index: 1300;
+}
+
+.nav__list.active {
+ right: 0;
+ opacity: 1;
+}
+
+.close {
+ position: absolute;
+ top: 2rem;
+ left: 2rem;
+}
+
+.nav__item {
+ margin: 1.5rem 0;
+}
+
+.nav__link {
+ text-transform: uppercase;
+ font-size: 1.6rem;
+ color: var(--jet);
+ transition: 420ms ease;
+}
+
+.nav__link:hover {
+ color: var(--ceil);
+}
+
+/* Hero & Main Message */
+
+#hero {
+ width: 100%;
+ height: 80vh;
+ position: relative;
+ background: linear-gradient(135deg, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, .3) 100%), url('../img/boardwalk.jpeg') center no-repeat;
+ background-size: cover;
+}
+
+.main__message {
+ width: 100%;
+ max-width: 50rem;
+ color: var(--iceberg);
+ text-transform: uppercase;
+ transform: translateY(20%);
+}
+
+.main__message h3 {
+ font-size: 1.6rem;
+}
+
+.main__message h1 {
+ font-family: var(--bree-serif);
+ font-size: 4rem;
+ margin: 2rem 0;
+}
+
+.main__message p {
+ text-transform: lowercase;
+}
+
+/* Outdoor Section */
+
+#experience__outdoors {
+ padding: 0;
+}
+
+.title__heading {
+ text-align: center;
+ text-transform: uppercase;
+ margin: 5rem 0;
+ color: var(--iceberg);
+}
+
+.title__heading h3 {
+ font-size: 1.4rem;
+}
+
+.title__heading h1 {
+ font-size: 2rem;
+ font-family: var(--bree-serif);
+ margin: .5rem 0 1rem;
+}
+
+.title__heading p {
+ text-transform: lowercase;
+}
+
+.activities__grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+ grid-gap: 2.5rem;
+}
+
+.activities__grid__item {
+ height: 40rem;
+ padding: 5rem;
+ border-radius: 2rem;
+ position: relative;
+ cursor: pointer;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ color: var(--iceberg);
+ z-index: 1;
+}
+
+.activities__grid__item::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ right: 100%;
+ border-radius: 2rem;
+ background-image: linear-gradient(135deg, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, .9) 100%);
+ z-index: -1;
+}
+
+.star__gazing {
+ background: url('../img/beautifull.jpg') center no-repeat;
+}
+
+.hiking {
+ background: url('../img/beautifull.jpg') center no-repeat;
+}
+
+.camping {
+ background: url('../img/beautifull.jpg') center no-repeat;
+}
+
+.activities__grid__item i {
+ font-size: 4rem;
+ color: var(--iceberg);
+}
+
+.activities__grid__item h1 {
+ font-size: 4rem;
+ margin: 1.5rem 0;
+}
+
+.activities__grid__item p {
+ font-size: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+
+ .nav__list {
+  width: initial;
+  height: initial;
+  background: transparent;
+  position: initial;
+  top: initial;
+  right: initial;
+  opacity: initial;
+  flex-direction: row;
+  transition: initial;
+ }
+
+ .menu__icons {
+  display: none;
+ }
+
+ .nav__item {
+  margin: 0 2rem;
+ }
+
+ .nav__link {
+  color: var(--ceil);
+  font-weight: 600;
+ }
+}

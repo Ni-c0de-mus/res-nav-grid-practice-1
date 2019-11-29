@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC|Arbutus+Slab|Bree+Serif|Cinzel|Cormorant+Garamond|Crete+Round|DM+Serif+Text|Domine|Nanum+Myeongjo|Neuton|Playfair+Display+SC|Solway|Ultra|Vidaloka|Zilla+Slab&display=swap');
+
+*,
+*::before,
+*::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: inherit;
+}
+
+:root {
+ /* fonts */
+
+ --bree-serif: 'Bree Serif', serif;
+ --solway-serif: 'Solway', serif;
+ --crete-round: 'Crete Round', serif;
+ --domine-serif: 'Domine', serif;
+ --cinzel-serif: 'Cinzel', serif;
+ --cormorant-garamond: 'Cormorant Garamond', serif;
+ --zilla-slab: 'Zilla Slab', serif;
+ --nanum-serif: 'Nanum Myeongjo', serif;
+ --vidaloka: 'Vidaloka', serif;
+ --neuton: 'Neuton', serif;
+ --playfair: 'Playfair Display SC', serif;
+ --ultra-serif: 'Ultra', serif;
+ --arbutus-slab: 'Arbutus Slab', serif;
+ --dm-serif: 'DM Serif Text', serif;
+ --alegreya: 'Alegreya SC', serif;
+
+ /* Coolors */
+
+ --mellow-yellow: #F3E37C;
+ --sandstorm: #F3D34A;
+ --neon-carrot: #EEA243;
+ --neon-carrot2: #F3A738;
+ --tuscan: #F1D9A7;
+ --tuscanny: #C89F9C;
+ --copper-penny: #B36A5E;
+ --platinum: #EEE2DF;
+ --sasquatch: #FF4D80;
+ --coral-red: #FF3E41;
+ --deep-cerise: #DF367C;
+ --burgundy: #780116;
+ --flame: #D8572A;
+ --int-orange: #C32F27;
+ --jet: #3A3335;
+ --dog-rose: #D81E5B;
+ --papaya-whip: #FDF0D5;
+ --catawba: #773344;
+ --pastel-pink: #E3B5A4;
+ --alabaster: #F5E9E2;
+ --maastricht-blue: #022B3A;
+ --metal-sea: #1F7A8C;
+ --pale-aqua: #BFDBF7;
+ --rich-maroon: #B8336A;
+ --gray-magenta: #C490D1;
+ --blu-purple: #ACACDE;
+}
+
+html {
+ font-size: 10px;
+ box-sizing: border-box;
+}
+
+a {
+ text-decoration: none;
+}
+
+ul {
+ list-style: none;
+}
+
+img {
+ width: 100%;
+ max-width: 100%;
+ height: auto;
+}
+
+p {
+ font-size: 1.6rem;
+}
+
+.btn {
+ border-radius: 2rem;
+ background: var(--deep-cerise);
+ color: var(--papaya-whip);
+ padding: .8rem 1.6rem;
+ margin-top: 2rem;
+ letter-spacing: .2rem;
+ display: inline-block;
+ font-size: 1.2rem;
+ text-transform: uppercase;
+ transition: 420ms ease;
+
+}
+
+.btn:hover {
+ background: var(--neon-carrot2);
+ color: var(--jet);
+}
+
+section {
+ padding: 5rem 0;
+}
+
+body {
+ background: var(--gray-magenta);
+ font-family: var(--bree-serif);
+}
+
+/* Header */
+
+header {
+ width: 100%;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: 1;
+}
+
+.container {
+ width: 100%;
+ max-width: 98rem;
+ padding: 0 1.5rem;
+ margin: 0 auto;
+}
+
+.menu__icons {
+ font-size: 3.5rem;
+ color: var(--platinum);
+ cursor: pointer;
+ transition: 420ms ease;
+}
+
+.menu__icons:hover {
+ color: var(--neon-carrot);
+}
+
+.nav__brand {
+ width: 3.5rem;
+}
+
+nav {
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0 1rem;
+}
+
+.nav__list {
+ width: 25rem;
+ height: 100vh;
+ background: var(--flame);
+ position: fixed;
+ top: 0;
+ right: -26rem;
+ opacity: 0;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ transition: all 650ms ease-in-out, opacity 810ms ease;
+ z-index: 1300;
+}
+
+.nav__list.active {
+ right: 0;
+ opacity: 1;
+}
+
+.close {
+ position: absolute;
+ top: 2rem;
+ left: 2rem;
+}
+
+.nav__item {
+ margin: 2rem 0;
+}
+
+.nav__link {
+ font-size: 1.6rem;
+ color: var(--platinum);
+ letter-spacing: .2rem;
+ text-transform: uppercase;
+ transition: 420ms ease;
+}
+
+.nav__link:hover {
+ color: var(--neon-carrot);
+}
+
+/* Hero */
+
+#hero {
+ width: 100%;
+ height: 80vh;
+ background: linear-gradient(135deg, rgba(47, 47, 47, 0.5) 0%, rgba(47, 47, 47, 0.3) 100%), url('../img/boardwalk.jpeg') center no-repeat;
+ background-size: cover;
+ position: relative;
+}
+
+.main__message {
+ width: 100%;
+ max-width: 50rem;
+ color: var(--platinum);
+ letter-spacing: .2rem;
+ text-transform: uppercase;
+ transform: translateY(20%);
+}
+
+.main__message h3 {
+ font-size: 1.6rem;
+}
+
+.main__message h1 {
+ font-size: 4rem;
+ margin: 2rem 0;
+}
+
+.main__message p {
+ text-transform: lowercase;
+}
+
+/* Test Flight */
+
+#test__fly {
+ padding: 0;
+}
+
+.title__heading {
+ text-align: center;
+ color: var(--platinum);
+ text-transform: uppercase;
+ margin: 4rem 0;
+}
+
+.title__heading h3 {
+ font-size: 1.4rem;
+}
+
+.title__heading h1 {
+ font-size: 2rem;
+ margin: 1.2rem 0;
+}
+
+.title__heading p {
+ text-transform: lowercase;
+}
+
+.test__fly__grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(25rem, auto));
+ grid-gap: 2.5rem;
+}
+
+.test__fly__item {
+ height: 40rem;
+ padding: 5rem;
+ color: var(--platinum);
+ border-radius: 2rem;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ cursor: pointer;
+ z-index: 1;
+}
+
+.test__fly__item::before {
+ content: "";
+ position: absolute;
+ border-radius: 2rem;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-image: linear-gradient(135deg, rgba(47, 47, 47, 0.3) 0%, rgba(47, 47, 47, 0.5) 100%);
+ z-index: -1;
+}
+
+.t-65 {
+ background: url('../img/x-wing2.jpg') center no-repeat;
+}
+
+.naboo {
+ background: url('../img/x-wing2.jpg') center no-repeat;
+}
+
+.y-wing {
+ background: url('../img/x-wing2.jpg') center no-repeat;
+}
+
+.test__fly__item i {
+ font-size: 4rem;
+ color: var(--coral-red);
+}
+
+.test__fly__item h1 {
+ margin: 2rem 0;
+}
+
+@media screen and (min-width: 600px) {
+ 
+    .nav__list {
+        width: initial;
+        height: initial;
+        position: initial;
+        background: transparent;
+        top: initial;
+        right: initial;
+        opacity: initial;
+        flex-direction: row;
+        transition: initial;
+    }
+
+    .nav__item {
+        margin: 0 2rem;
+    }
+
+    .menu__icons {
+     display: none;
+    }
+
+
+}
